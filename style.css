@@ -1,2 +1,860 @@
+/* =========================================================
+   FONTES
+========================================================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-:root{--navy:#06172d;--blue:#1479ff;--cyan:#55c8ff;--ink:#10233c;--muted:#627187;--soft:#f3f7fc;--line:#dce6f1}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);line-height:1.65;background:#fff}header{position:fixed;z-index:20;width:100%;background:rgba(5,20,40,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{max-width:1180px;margin:auto;height:72px;padding:0 24px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:24px;font-weight:800;color:#fff;text-decoration:none}.brand span,h1 span{color:var(--cyan)}#menu{display:flex;gap:24px}#menu a{color:#dce8f7;text-decoration:none;font-size:14px}#menu a:hover{color:#fff}#menuBtn{display:none;background:none;border:0;color:#fff;font-size:25px}.grid{max-width:1180px;margin:auto;padding-left:24px;padding-right:24px}section{padding:110px 0}.dark{background:var(--navy);color:#fff}.soft{background:var(--soft)}.hero{min-height:760px;padding-top:160px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:550px;height:550px;border-radius:50%;background:radial-gradient(circle,rgba(20,121,255,.25),transparent 65%);right:-100px;top:80px}.hero-grid,.two{display:grid;grid-template-columns:1.08fr .92fr;gap:80px;align-items:center}.eyebrow{font-size:12px;letter-spacing:.18em;font-weight:800;color:#76d5ff}.eyebrow.blue{color:var(--blue)}h1{font-size:clamp(58px,8vw,104px);line-height:.95;margin:20px 0;letter-spacing:-.06em}h2{font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.04em;margin:12px 0 24px}h3{line-height:1.25}.hero h2{font-size:clamp(19px,2vw,28px);font-weight:500;letter-spacing:-.02em;color:#d8e6f7}.hero h2 b{color:#5c789a;margin:0 8px}.lead{font-size:19px;color:#b8c8da;max-width:650px}.actions{display:flex;gap:12px;margin:34px 0}.btn{padding:13px 20px;border-radius:10px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:14px}.btn.ghost{background:transparent;border:1px solid #36516e}.place{font-size:13px;color:#8197af}.portrait{display:flex;justify-content:center}.photo-placeholder{width:min(390px,90vw);aspect-ratio:4/5;border:1px solid rgba(255,255,255,.2);border-radius:32px;background:linear-gradient(145deg,#12375d,#081d36);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 30px 80px rgba(0,0,0,.25);position:relative;overflow:hidden}.photo-placeholder:after{content:"";position:absolute;inset:18px;border:1px dashed rgba(255,255,255,.2);border-radius:22px}.photo-placeholder strong{font-size:28px}.photo-placeholder small{color:#8ca3bb}.two p{color:var(--muted);font-size:17px}.dark .two p{color:#b9c8d9}.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:70px}.pillars article,.cards article,.values article,.projects article{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;transition:.25s}.pillars article:hover,.cards article:hover,.projects article:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(25,63,105,.09)}.pillars b{color:var(--blue)}.pillars p,.cards p,.projects p,.values p{color:var(--muted)}.section-head{max-width:760px;margin:0 auto 48px;text-align:center}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.cards i{font-style:normal;font-size:30px}.edu{position:relative;overflow:hidden}.orbit{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.orbit span,.tags span{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);padding:12px 16px;border-radius:999px}.network{height:430px;position:relative;border-radius:50%;border:1px solid #dbe8f5;background:radial-gradient(circle,#e9f5ff 0,transparent 65%)}.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:105px;height:105px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-size:32px;font-weight:800;box-shadow:0 0 45px rgba(20,121,255,.35)}.network span{position:absolute;background:#fff;border:1px solid var(--line);border-radius:20px;padding:8px 12px;font-size:13px}.network span:nth-of-type(1){top:14%;left:45%}.network span:nth-of-type(2){top:35%;right:8%}.network span:nth-of-type(3){bottom:15%;right:25%}.network span:nth-of-type(4){bottom:16%;left:18%}.network span:nth-of-type(5){top:38%;left:5%}.network span:nth-of-type(6){top:10%;left:15%}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project-img{height:190px;border-radius:14px;background:linear-gradient(135deg,#0b2a4b,#1685ff);color:#fff;display:grid;place-items:center;font-size:46px;font-weight:800;margin-bottom:22px}.projects small{color:var(--blue);font-weight:800}.projects button{border:0;background:none;color:var(--blue);font-weight:700;padding:0;cursor:pointer}.values{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.values article{text-align:center;padding:24px 14px;font-size:24px}.values h3{font-size:16px}.values p{font-size:12px}.tags{max-width:920px;margin:auto;display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.contact{display:grid;grid-template-columns:1fr 1fr;gap:90px}.contact-list{display:flex;flex-direction:column}.contact-list a{padding:18px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;text-decoration:none;color:var(--ink);font-weight:700}.contact-list span{font-weight:500;color:var(--blue);font-size:13px}footer{background:#041326;color:#fff;padding:32px max(24px,calc((100vw - 1132px)/2));display:flex;align-items:center;gap:25px;flex-wrap:wrap}footer span,footer small{color:#8196ad}footer small{margin-left:auto}.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.visible{opacity:1;transform:none}@media(max-width:850px){#menuBtn{display:block}#menu{display:none;position:absolute;top:72px;left:0;right:0;background:#071a31;padding:20px 24px;flex-direction:column}#menu.open{display:flex}.hero-grid,.two,.contact{grid-template-columns:1fr;gap:45px}.hero{padding-top:130px}.portrait{order:-1}.photo-placeholder{width:260px}.pillars{grid-template-columns:1fr 1fr}.cards,.projects{grid-template-columns:1fr}.values{grid-template-columns:repeat(2,1fr)}section{padding:80px 0}.network{height:340px}footer small{margin-left:0;width:100%}}@media(max-width:520px){.pillars{grid-template-columns:1fr}.actions{flex-direction:column}.btn{text-align:center}.hero{min-height:auto}h1{font-size:62px}.values{grid-template-columns:1fr 1fr}}
+
+
+/* =========================================================
+   VARIÁVEIS
+========================================================= */
+
+:root {
+    --navy: #06172d;
+    --blue: #1479ff;
+    --cyan: #55c8ff;
+    --ink: #10233c;
+    --muted: #627187;
+    --soft: #f3f7fc;
+    --line: #dce6f1;
+}
+
+
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    color: var(--ink);
+    line-height: 1.65;
+    background: #fff;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+header {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    background: rgba(5, 20, 40, 0.88);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav {
+    max-width: 1180px;
+    margin: auto;
+    height: 72px;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.brand {
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+}
+
+.brand span,
+h1 span {
+    color: var(--cyan);
+}
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+#menu {
+    display: flex;
+    gap: 24px;
+}
+
+#menu a {
+    color: #dce8f7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#menu a:hover {
+    color: #fff;
+}
+
+#menuBtn {
+    display: none;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+/* =========================================================
+   ESTRUTURA
+========================================================= */
+
+.grid {
+    max-width: 1180px;
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+section {
+    padding: 110px 0;
+}
+
+.dark {
+    background: var(--navy);
+    color: #fff;
+}
+
+.soft {
+    background: var(--soft);
+}
+
+
+/* =========================================================
+   HERO / INÍCIO
+========================================================= */
+
+.hero {
+    min-height: 760px;
+    padding-top: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(20, 121, 255, 0.25),
+            transparent 65%
+        );
+
+    right: -100px;
+    top: 80px;
+}
+
+.hero-grid,
+.two {
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 80px;
+    align-items: center;
+}
+
+
+/* =========================================================
+   TÍTULOS E TEXTOS
+========================================================= */
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    font-weight: 800;
+    color: #76d5ff;
+}
+
+.eyebrow.blue {
+    color: var(--blue);
+}
+
+h1 {
+    font-size: clamp(58px, 8vw, 104px);
+    line-height: 0.95;
+    margin: 20px 0;
+    letter-spacing: -0.06em;
+}
+
+h2 {
+    font-size: clamp(34px, 4vw, 56px);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    margin: 12px 0 24px;
+}
+
+h3 {
+    line-height: 1.25;
+}
+
+.hero h2 {
+    font-size: clamp(19px, 2vw, 28px);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #d8e6f7;
+}
+
+.hero h2 b {
+    color: #5c789a;
+    margin: 0 8px;
+}
+
+.lead {
+    font-size: 19px;
+    color: #b8c8da;
+    max-width: 650px;
+}
+
+.place {
+    font-size: 13px;
+    color: #8197af;
+}
+
+
+/* =========================================================
+   BOTÕES DO HERO
+========================================================= */
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin: 34px 0;
+}
+
+.btn {
+    padding: 13px 20px;
+    border-radius: 10px;
+
+    background: var(--blue);
+    color: #fff;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn.ghost {
+    background: transparent;
+    border: 1px solid #36516e;
+}
+
+
+/* =========================================================
+   FOTO / RETRATO
+========================================================= */
+
+.portrait {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Foto real */
+
+.profile-photo {
+    width: min(120px, 40vw);
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Placeholder antigo - pode ser removido se já estiver usando a foto */
+
+.photo-placeholder {
+    width: min(390px, 90vw);
+    aspect-ratio: 4 / 5;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 32px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #12375d,
+            #081d36
+        );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.25);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-placeholder::after {
+    content: "";
+    position: absolute;
+    inset: 18px;
+
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 22px;
+}
+
+.photo-placeholder strong {
+    font-size: 28px;
+}
+
+.photo-placeholder small {
+    color: #8ca3bb;
+}
+
+
+/* =========================================================
+   SEÇÃO SOBRE
+========================================================= */
+
+.two p {
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.dark .two p {
+    color: #b9c8d9;
+}
+
+
+/* =========================================================
+   PILARES
+========================================================= */
+
+.pillars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+
+    margin-top: 70px;
+}
+
+.pillars article,
+.cards article,
+.values article,
+.projects article {
+    background: #fff;
+
+    border: 1px solid var(--line);
+    border-radius: 20px;
+
+    padding: 26px;
+
+    transition: 0.25s;
+}
+
+.pillars article:hover,
+.cards article:hover,
+.projects article:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 45px rgba(25, 63, 105, 0.09);
+}
+
+.pillars b {
+    color: var(--blue);
+}
+
+.pillars p,
+.cards p,
+.projects p,
+.values p {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   CABEÇALHO DAS SEÇÕES
+========================================================= */
+
+.section-head {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+
+/* =========================================================
+   CARDS - ÁREAS
+========================================================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.cards i {
+    font-style: normal;
+    font-size: 30px;
+}
+
+
+/* =========================================================
+   TECNOLOGIA + EDUCAÇÃO
+========================================================= */
+
+.edu {
+    position: relative;
+    overflow: hidden;
+}
+
+.orbit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.orbit span,
+.tags span {
+    border: 1px solid rgba(255, 255, 255, 0.16);
+
+    background:
+        rgba(255, 255, 255, 0.06);
+
+    padding: 12px 16px;
+    border-radius: 999px;
+}
+
+
+/* =========================================================
+   INTELIGÊNCIA ARTIFICIAL / NETWORK
+========================================================= */
+
+.network {
+    height: 430px;
+    position: relative;
+
+    border-radius: 50%;
+    border: 1px solid #dbe8f5;
+
+    background:
+        radial-gradient(
+            circle,
+            #e9f5ff 0,
+            transparent 65%
+        );
+}
+
+.core {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 105px;
+    height: 105px;
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--blue);
+    color: #fff;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    box-shadow:
+        0 0 45px rgba(20, 121, 255, 0.35);
+}
+
+.network span {
+    position: absolute;
+
+    background: #fff;
+
+    border: 1px solid var(--line);
+    border-radius: 20px;
+
+    padding: 8px 12px;
+
+    font-size: 13px;
+}
+
+.network span:nth-of-type(1) {
+    top: 14%;
+    left: 45%;
+}
+
+.network span:nth-of-type(2) {
+    top: 35%;
+    right: 8%;
+}
+
+.network span:nth-of-type(3) {
+    bottom: 15%;
+    right: 25%;
+}
+
+.network span:nth-of-type(4) {
+    bottom: 16%;
+    left: 18%;
+}
+
+.network span:nth-of-type(5) {
+    top: 38%;
+    left: 5%;
+}
+
+.network span:nth-of-type(6) {
+    top: 10%;
+    left: 15%;
+}
+
+
+/* =========================================================
+   PROJETOS
+========================================================= */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-img {
+    height: 190px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b2a4b,
+            #1685ff
+        );
+
+    color: #fff;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 46px;
+    font-weight: 800;
+
+    margin-bottom: 22px;
+}
+
+.projects small {
+    color: var(--blue);
+    font-weight: 800;
+}
+
+.projects button {
+    border: 0;
+    background: none;
+
+    color: var(--blue);
+
+    font-weight: 700;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   VALORES
+========================================================= */
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+}
+
+.values article {
+    text-align: center;
+    padding: 24px 14px;
+
+    font-size: 24px;
+}
+
+.values h3 {
+    font-size: 16px;
+}
+
+.values p {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   INTERESSES / TAGS
+========================================================= */
+
+.tags {
+    max-width: 920px;
+
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   CONTATO
+========================================================= */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-list a {
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--line);
+
+    display: flex;
+    justify-content: space-between;
+
+    text-decoration: none;
+
+    color: var(--ink);
+
+    font-weight: 700;
+}
+
+.contact-list span {
+    font-weight: 500;
+    color: var(--blue);
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+
+footer {
+    background: #041326;
+    color: #fff;
+
+    padding:
+        32px
+        max(24px, calc((100vw - 1132px) / 2));
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+footer span,
+footer small {
+    color: #8196ad;
+}
+
+footer small {
+    margin-left: auto;
+}
+
+
+/* =========================================================
+   ANIMAÇÕES
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(22px);
+
+    transition:
+        0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+
+/* =========================================================
+   RESPONSIVO - TABLET / CELULAR
+========================================================= */
+
+@media (max-width: 850px) {
+
+    #menuBtn {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+
+        position: absolute;
+
+        top: 72px;
+        left: 0;
+        right: 0;
+
+        background: #071a31;
+
+        padding: 20px 24px;
+
+        flex-direction: column;
+    }
+
+    #menu.open {
+        display: flex;
+    }
+
+
+    /* Estrutura */
+
+    .hero-grid,
+    .two,
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding-top: 130px;
+    }
+
+
+    /* Foto */
+
+    .portrait {
+        order: -1;
+    }
+
+    .photo-placeholder,
+    .profile-photo {
+        width: 260px;
+    }
+
+
+    /* Pilares */
+
+    .pillars {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* Cards e projetos */
+
+    .cards,
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Valores */
+
+    .values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Seções */
+
+    section {
+        padding: 80px 0;
+    }
+
+
+    /* IA */
+
+    .network {
+        height: 340px;
+    }
+
+
+    /* Rodapé */
+
+    footer small {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVO - CELULARES PEQUENOS
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    h1 {
+        font-size: 62px;
+    }
+
+    .values {
+        grid-template-columns: 1fr 1fr;
+    }
+}
